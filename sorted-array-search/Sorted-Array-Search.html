@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<body>
+
+    <p>index of 5</p>
+
+    <button onclick="Function()">Try it</button>
+
+    <p id="go"></p>
+
+    
+
+    <script>
+        var array = [1, 2, 3, 5, 8, 12];
+
+        function indexit(arr) {
+            return arr >= 5;
+        }
+
+        function Function() {
+            document.getElementById("go").innerHTML =
+                array.findIndex(indexit);
+        }
+    </script>
+
+</body>
+</html>
